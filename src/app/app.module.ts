@@ -1,7 +1,7 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 
-import { FormsModule } from "@angular/forms";
+import { FormsModule, NgModel } from "@angular/forms";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { HeroesComponent } from "./components/heroes/heroes.component";
@@ -34,4 +34,13 @@ import { HeroSearchComponent } from "./components/hero-search/hero-search.compon
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule {
+  bs = this.OnInit(2);
+
+  OnInit(val: number){
+    return val / 0;
+  }
+
+  
+
+}

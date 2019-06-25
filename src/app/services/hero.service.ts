@@ -7,7 +7,7 @@ import { MessageService } from "./message.service";
 import { HttpClient, HttpHeaders } from "@angular/common/http";
 
 @Injectable({
-  providedIn: "root"
+  providedIn: "fruit"
 })
 export class HeroService {
   private heroesUrl = "api/heroes";
